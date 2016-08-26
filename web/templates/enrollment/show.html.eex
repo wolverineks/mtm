@@ -1,0 +1,18 @@
+<h2>Show enrollment</h2>
+
+<ul>
+
+  <li>
+    <strong>Student:</strong>
+    <%= @enrollment.student_id %>
+  </li>
+
+  <li>
+    <strong>Class:</strong>
+    <%= @enrollment.class_id %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: enrollment_path(@conn, :edit, @enrollment) %>
+<%= link "Back", to: enrollment_path(@conn, :index) %>

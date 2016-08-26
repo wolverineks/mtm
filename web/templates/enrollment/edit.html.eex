@@ -1,0 +1,6 @@
+<h2>Edit enrollment</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: enrollment_path(@conn, :update, @enrollment) %>
+
+<%= link "Back", to: enrollment_path(@conn, :index) %>

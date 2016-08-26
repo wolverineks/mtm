@@ -1,0 +1,13 @@
+<h2>Show class</h2>
+
+<ul>
+
+  <li>
+    <strong>Topic:</strong>
+    <%= @class.topic %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: class_path(@conn, :edit, @class) %>
+<%= link "Back", to: class_path(@conn, :index) %>
